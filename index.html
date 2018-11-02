@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <!-- NAV -->
+        <nav id="overlay">
+            <img src="images/close.svg" class ="close-button" id="close-menu">
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                    <span>go home</span>
+                </li>
+                <li>
+                    <a href="#">ABOUT</a>
+                    <span>who we are</span>
+                </li>
+                <li>
+                    <a href="#">SERVICES</a>
+                    <span>what we do</span>
+                </li>
+                <li>
+                    <a href="#">CONTACT</a>
+                    <span>email us</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- MENU BUTTON -->
+        <header>
+            <a href="#" class="logo">mySite</a>
+            <img src="images/menu.svg" class ="menu-button" id="open-menu">
+        </header>
+
+        <!-- MAIN SECTION -->
+        <section>
+            <h1>YOUR LOGO GOES HERE</h1>
+            <div class="tagline">this is your tagline</div>
+        </section>
+
+        <script>
+
+            // Make variables
+            var overlay = document.getElementById('overlay');
+            var closeMenu = document.getElementById('close-menu');
+
+            // Open menu
+            document.getElementById('open-menu').addEventListener('click', function(){
+                overlay.classList.add('show-menu');
+            });
+
+            // Close menu
+            document.getElementById('close-menu').addEventListener('click', function(){
+                overlay.classList.remove('show-menu');
+            });
+
+
+
+        </script>
+
+        
+    </body>
+</html>
